@@ -1,0 +1,34 @@
+:root {
+  --color1: #1A3636;
+  --color2: #40534C;
+  --color3: #677D6A;
+  --color4: #D6BD98;
+  /* 
+    #FFE8C7 #2B5959
+  */
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+#container {
+  height: 100%;
+  display: grid;
+  grid-template: 1fr 3fr / min(30%, 280px) 3fr;
+  background-color: var(--color1);
+}
+
+#header {
+  background-color: var(--color2);
+}
+
+#sidebar {
+  background-color: var(--color3);
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+#content {
+
+}
