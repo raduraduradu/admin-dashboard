@@ -2,26 +2,62 @@
   --color1: #1A3636;
   --color2: #40534C;
   --color3: #677D6A;
-  --color4: #D6BD98;
+  --color4: #FFE8C7;
   /* 
-    #FFE8C7 #2B5959
+    #FFE8C7 #2B5959 #D6BD98
   */
+}
+
+@font-face {
+  font-family: aqua;
+  src: url(./aqua.ttf);
 }
 
 body {
   height: 100vh;
   margin: 0;
+  color: var(--color4);
+  font-family: aqua, roboto;
 }
 
 #container {
   height: 100%;
   display: grid;
-  grid-template: 1fr 3fr / min(30%, 280px) 3fr;
+  grid-template: 1fr 4fr / min(30%, 280px) 3fr;
   background-color: var(--color1);
 }
 
 #header {
   background-color: var(--color2);
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+  gap: 5px;
+}
+
+#header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header #buttons-div {
+  gap: 35px;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  background-color: var(--color4);
+  color: var(--color1);
+  padding: 6px 12px;
+}
+
+input {
+  border: none;
+  border-radius: 3px;
+  background-color: var(--color4);
+  width: 80%;
+  height: 20px;
 }
 
 #sidebar {
