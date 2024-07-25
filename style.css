@@ -20,6 +20,11 @@ body {
   font-family: aqua, roboto;
 }
 
+i {
+  color: var(--color4);
+  margin-right: 8px;
+}
+
 #container {
   height: 100%;
   display: grid;
