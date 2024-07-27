@@ -142,10 +142,13 @@ p {
   margin: 0
 }
 
-#projects-div .card .card-title {
+.card-title {
   font-weight: bold;
-  font-size: 20px;
   margin-bottom: 5px;
+}
+
+#projects-div .card-title {
+  font-size: 20px;
 }
 
 #at-div {
@@ -159,5 +162,15 @@ p {
 }
 
 #at-div .card {
+  padding: 20px;
+  display: grid;
+  grid-auto-flow: row;
+}
 
+#at-div .card .card-title {
+  font-size: 95%;
+}
+
+#at-div p {
+  font-size: 90%;
 }
