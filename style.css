@@ -54,7 +54,7 @@ i {
   align-items: flex-start;
   justify-content: flex-start;
 }
-#header #greeting-div h2,
+#header #greeting-div h1,
 #greeting-div p {
   margin-top: 0;
   margin-bottom: 5px;
@@ -112,20 +112,29 @@ input {
 
 #content {
   display: grid;
-  grid-template: 1fr / 3fr 1fr;
+  grid-template: 0.08fr 1fr / 3fr 1fr;
+  padding: 20px;
+  grid-column-gap: 25px;
+}
+
+.section-title {
+  margin: 8px 0 8px 0;
 }
 
 #content #projects-div {
-  padding: 20px;
+  grid-area: 2 / 1 / 3 / 2;
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr;
   gap: 25px;
 }
 
-#projects-div .project-card {
+.card{
   background-color: var(--color2);
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+#projects-div .card {
   border-left: 5px solid var(--color4);
 }
 
@@ -133,8 +142,22 @@ p {
   margin: 0
 }
 
-#projects-div .project-card .card-title {
+#projects-div .card .card-title {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 5px;
+}
+
+#at-div {
+  display: grid;
+  grid-template: 4fr 1fr 4fr / 1fr;
+}
+
+#at-div h2 {
+  display: flex;
+  align-items: flex-end;
+}
+
+#at-div .card {
+
 }
