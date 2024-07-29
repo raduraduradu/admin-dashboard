@@ -29,12 +29,16 @@ i {
 
 .pfp {
   height: 45px;
+  width: 45px;
   border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .icon {
   height: 25px;
   filter: var(--icon-filter);
+  cursor: pointer;
 }
 
 
@@ -80,7 +84,9 @@ i {
 }
 
 #greeting-div .pfp{
+  flex-shrink: 0;
   height: 90px;
+  width: 90px;
 }
 
 #header #buttons-div {
@@ -95,6 +101,7 @@ button {
   color: var(--color1);
   padding: 6px 12px;
   font-family: inherit;
+  cursor: pointer;
 }
 
 input {
@@ -207,6 +214,11 @@ p {
 
 #at-div p {
   font-size: 90%;
+}
+
+#at-div .trending-profile {
+  display: flex;
+  gap: 10px;
 }
 
 #at-div .trending p:nth-child(odd){
