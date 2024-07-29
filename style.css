@@ -18,6 +18,7 @@ body {
   margin: 0;
   color: var(--color4);
   font-family: roboto;
+  background-color: var(--color1);
 }
 
 i {
@@ -29,7 +30,6 @@ i {
   height: 100%;
   display: grid;
   grid-template: 1fr 4fr / min(30%, 280px) 3fr;
-  background-color: var(--color1);
 }
 
 #header {
@@ -167,10 +167,15 @@ p {
   grid-auto-flow: row;
 }
 
-#at-div .card .card-title {
+#at-div .card-title {
   font-size: 95%;
+  margin-top: 5px;
 }
 
 #at-div p {
   font-size: 90%;
+}
+
+#at-div .trending p:nth-child(odd){
+  font-weight: bold;
 }
